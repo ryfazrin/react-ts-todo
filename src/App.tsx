@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './App.css'
+import { ITask } from './interfaces'
 
 const App: React.FC = () => {
   const [task, setTask] = useState<string>('')
   const [deadline, setDeadLine] = useState<number>(0)
+  const [todo, setTodo] = useState<ITask[]>([])
   
   return (
     <div className='App'>
